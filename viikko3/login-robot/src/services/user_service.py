@@ -1,3 +1,4 @@
+import re
 from entities.user import User
 
 
@@ -33,8 +34,23 @@ class UserService:
 
         return user
 
+    def check_password(self, password):
+        if len(password) < 8:
+            raise UserInputError("Password too short")
+
+        if password.isalpha():
+            raise UserInputError("Invalid password")
+
+    def check_username(self, username):
+        if self._user_repository.find_by_username(username):
+            raise(UserInputError(f"User with username {username} already exists"))
+
+        if not re.match("^[a-z]{3,}$", username):
+            raise UserInputError("Invalid username")
+
     def validate(self, username, password):
         if not username or not password:
             raise UserInputError("Username and password are required")
 
-        # toteuta loput tarkastukset tänne ja nosta virhe virhetilanteissa
+        self.check_username(username)
+        self.check_password(password)
