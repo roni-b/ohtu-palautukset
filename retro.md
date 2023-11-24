@@ -2,3 +2,4 @@ Ensimmäinen retrospektiivitekniikka on nimeltään Start, Stop, Continue, More 
 
 Toisessa tekniikassa jokainen osallistuja kirjoittaa havaintoja sprintiltä ja sitten ne jaotellaan ryhmiin Glad, Sad tai Mad. Tämän jälkeen osallistujat äänestävät mistä havaituista aiheista keskustellaan numeroimalla asiat tärkeysjärjestykseen ja valitsemalla aiheet tärkeimmät ensin. Ryhmä keskutelee jokaisesta aiheesta vuorollaan kunnes kaikki asiat on käyty läpi tai tunnin aikaraja ollaan saavutettu.
 
+1
